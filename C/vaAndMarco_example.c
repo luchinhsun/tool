@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-#define TEST_PRINTF(fmt, ...) test_printf("(%s, %d)"fmt"\n", __func__, __LINE__, ##__VA_ARGS__)
+#define TEST_PRINTF(myformat, ...) test_printf("(%s, %d)"myformat"\n", __func__, __LINE__, ##__VA_ARGS__)
 
 int test_printf(const char *p, ...)
 {
